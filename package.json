@@ -1,6 +1,6 @@
 {
   "name": "vue-paystack2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "dist"
   ],
@@ -16,7 +16,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "lint": "eslint --fix --ext .ts,.vue --no-error-on-unmatched-pattern .",
-    "release": "standard-version && git push --follow-tags",
+    "release": "standard-version && git push --follow-tags && npm publish",
     "serve": "vite preview"
   },
   "dependencies": {
