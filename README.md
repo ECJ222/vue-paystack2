@@ -69,4 +69,4 @@ export default {
 
 Inspired by [vue-paystack](https://https://github.com/iamraphson/vue-paystack)
 
-MIT License © 2021 [Enoch Chejieh](https://github.com/ecj222)
+MIT License © 2021 [Enoch Chejieh](https://github.com/ECJ222)
