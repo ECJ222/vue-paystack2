@@ -1,0 +1,47 @@
+{
+  "name": "vue-paystack2",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-paystack2.umd.js",
+  "module": "./dist/vue-paystack2.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-paystack2.es.js",
+      "require": "./dist/vue-paystack2.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "lint": "eslint --fix --ext .ts,.vue --no-error-on-unmatched-pattern .",
+    "release": "standard-version && git push --follow-tags",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue-demi": "^0.11.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "@vitejs/plugin-vue": "^1.9.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.18.0",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.2",
+    "vue": "^3.2.16",
+    "vue-tsc": "^0.3.0",
+    "standard-version": "latest"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  }
+}
