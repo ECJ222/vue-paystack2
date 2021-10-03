@@ -1,6 +1,14 @@
 {
   "name": "vue-paystack2",
   "version": "0.0.2",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "composition-api",
+    "vue-demi",
+    "paystack",
+    "payment"
+  ],
   "files": [
     "dist"
   ],
