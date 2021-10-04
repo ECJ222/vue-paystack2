@@ -1,4 +1,7 @@
 <p align="center">
+<img src="./src/assets/vue-paystack.png" width="600"/>
+<br>
+<p align="center">
 <b>Vue-Paystack2</b> is a Paystack payment gateway integration for Vue which <br> provides <b>Universal support</b> for Vue 2 & 3<br>
 </p>
 
