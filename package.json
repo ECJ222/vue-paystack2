@@ -1,7 +1,9 @@
 {
   "name": "vue-paystack2",
-  "version": "0.0.5",
+  "version": "0.0.6",
+  "repository": "https://github.com/ECJ222/vue-paystack2.git",
   "license": "MIT",
+  "author": "Enoch Chejieh <enochchejieh@gmail.com>",
   "keywords": [
     "vue",
     "composition-api",
