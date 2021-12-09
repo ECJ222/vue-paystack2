@@ -70,6 +70,6 @@ export default {
 
 ## License
 
-Inspired by [vue-paystack](https://https://github.com/iamraphson/vue-paystack)
+Inspired by [vue-paystack](https://github.com/iamraphson/vue-paystack)
 
 MIT License © 2021 [Enoch Chejieh](https://github.com/ECJ222)
