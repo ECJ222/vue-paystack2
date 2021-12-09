@@ -39,9 +39,6 @@ export default defineComponent({
       type: Array as PropType<string[]>,
       default: () => ["card", "bank"],
     },
-    accessCode: {
-      type: String as PropType<string>,
-    },
     callback: {
       type: Function as PropType<(response: any) => void>,
       required: true,
@@ -67,10 +64,6 @@ export default defineComponent({
       default: "",
     },
     subaccount: {
-      type: String as PropType<string>,
-      default: "",
-    },
-    split: {
       type: String as PropType<string>,
       default: "",
     },
@@ -127,9 +120,6 @@ export default defineComponent({
         this.payWithPaystack()
       }
     },
-    isSplitDynamic(): boolean {
-      return Object.keys(this.split).length > 0
-    },
     payWithPaystack(): void {
       if (this.scriptLoaded) {
         const paystackOptions = {
@@ -139,7 +129,6 @@ export default defineComponent({
           lastname: this.lastname,
           channels: this.channels,
           amount: this.amount,
-          access_code: this.accessCode,
           ref: this.reference,
           callback: (response: any) => {
             this.callback(response)
@@ -151,11 +140,10 @@ export default defineComponent({
           currency: this.currency,
           plan: this.plan,
           quantity: this.quantity,
-          subaccount: this.isSplitDynamic() ? "" : this.subaccount,
-          split: this.isSplitDynamic() ? this.split : null,
-          split_code: this.isSplitDynamic() ? "" : this.splitCode,
-          transaction_charge: this.isSplitDynamic() ? 0 : this.transactionCharge,
-          bearer: this.isSplitDynamic() ? "" : this.bearer,
+          subaccount: this.subaccount,
+          split_code: this.splitCode,
+          transaction_charge: this.transactionCharge,
+          bearer: this.bearer,
         }
         const windowEl: any = window
         const handler = windowEl.PaystackPop.setup(paystackOptions)
